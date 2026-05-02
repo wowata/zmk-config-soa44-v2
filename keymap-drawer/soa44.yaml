@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: soa44}
 layers:
   default:
-  - ESCAPE
+  - {t: ESCAPE, h: Bluetooth}
   - Q
   - W
   - E
@@ -23,8 +23,8 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: SCROLL}
-  - '='
+  - {t: '-', h: MOUSE}
+  - {t: '=', h: MOUSE}
   - LEFT SHIFT
   - Z
   - X
@@ -36,14 +36,14 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: ARROW}
   - LEFT WIN
   - LEFT ALT
-  - {t: DELETE, h: Bluetooth}
+  - {t: DELETE, h: MOUSE}
   - {t: SPACE, h: NUM}
   - {t: LANGUAGE 2, h: FUNCTION}
-  - {t: LANGUAGE 1, h: NUM}
-  - {t: ENTER, h: FUNCTION}
+  - {t: LANGUAGE 1, h: FUNCTION}
+  - {t: ENTER, h: NUM}
   - ;
   MOUSE:
   - {t: ▽, type: trans}
@@ -68,7 +68,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB3'
   - '&mkp MB2'
-  - {t: '-', h: SCROLL}
+  - {t: '-', h: SCROLL, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,9 +183,7 @@ layers:
   ARROW:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -195,10 +193,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - RIGHT
   - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -217,6 +215,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -271,7 +271,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Bluetooth:
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -309,7 +309,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
