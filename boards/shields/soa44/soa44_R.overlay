@@ -22,7 +22,7 @@
     xy_clipper: xy_clipper {
         compatible = "zmk,input-processor-xy-clipper";
         #input-processor-cells = <0>;
-        threshold = <3>;
+        threshold = <8>;
         invert-x = <0>;
         invert-y = <0>;
     };
