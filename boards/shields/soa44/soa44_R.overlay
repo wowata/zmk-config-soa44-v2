@@ -22,7 +22,7 @@
     xy_clipper: xy_clipper {
         compatible = "zmk,input-processor-xy-clipper";
         #input-processor-cells = <0>;
-        threshold = <40>;
+        threshold = <20>;
         invert-x = <0>;
         invert-y = <0>;
     };
@@ -34,7 +34,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors =
-                <&xy_clipper>,        //誤発火防止
+                //<&xy_clipper>,        //誤発火防止
                 <&zip_temp_layer 1 700>;
 
         scroller {
